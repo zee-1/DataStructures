@@ -1,0 +1,78 @@
+==7323== Memcheck, a memory error detector
+==7323== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7323== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==7323== Command: ./main
+==7323== Parent PID: 3546
+==7323== 
+==7323== Invalid read of size 4
+==7323==    at 0x109D98: DisjointSet::find_parent(int) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x109C13: DisjointSet::Union(int, int) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10A0BB: kruskalsAlgo(Undirected_Graph) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10A6CE: main (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==  Address 0x4dcb33c is 4 bytes before a block of size 24 alloc'd
+==7323==    at 0x4846013: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7323==    by 0x1131F9: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x111766: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10FBA3: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10DE71: std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10C1F3: std::vector<int, std::allocator<int> >::resize(unsigned long, int const&) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10AF93: DisjointSet::DisjointSet(int) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x109F1E: kruskalsAlgo(Undirected_Graph) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10A6CE: main (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323== 
+==7323== Invalid read of size 4
+==7323==    at 0x109DC0: DisjointSet::find_parent(int) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x109C13: DisjointSet::Union(int, int) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10A0BB: kruskalsAlgo(Undirected_Graph) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10A6CE: main (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==  Address 0x4dcb33c is 4 bytes before a block of size 24 alloc'd
+==7323==    at 0x4846013: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7323==    by 0x1131F9: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x111766: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10FBA3: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10DE71: std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10C1F3: std::vector<int, std::allocator<int> >::resize(unsigned long, int const&) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10AF93: DisjointSet::DisjointSet(int) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x109F1E: kruskalsAlgo(Undirected_Graph) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10A6CE: main (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323== 
+==7323== Invalid read of size 4
+==7323==    at 0x109DE6: DisjointSet::find_parent(int) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x109C13: DisjointSet::Union(int, int) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10A0BB: kruskalsAlgo(Undirected_Graph) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10A6CE: main (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==  Address 0x4dcb33c is 4 bytes before a block of size 24 alloc'd
+==7323==    at 0x4846013: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7323==    by 0x1131F9: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x111766: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10FBA3: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10DE71: std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10C1F3: std::vector<int, std::allocator<int> >::resize(unsigned long, int const&) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10AF93: DisjointSet::DisjointSet(int) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x109F1E: kruskalsAlgo(Undirected_Graph) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10A6CE: main (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323== 
+==7323== Invalid write of size 4
+==7323==    at 0x109C21: DisjointSet::Union(int, int) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10A0BB: kruskalsAlgo(Undirected_Graph) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10A6CE: main (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==  Address 0x4dcb33c is 4 bytes before a block of size 24 alloc'd
+==7323==    at 0x4846013: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7323==    by 0x1131F9: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x111766: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10FBA3: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10DE71: std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10C1F3: std::vector<int, std::allocator<int> >::resize(unsigned long, int const&) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10AF93: DisjointSet::DisjointSet(int) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x109F1E: kruskalsAlgo(Undirected_Graph) (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323==    by 0x10A6CE: main (in /home/zee/Documents/Algo/WeightedUndirectedGraph/main)
+==7323== 
+==7323== 
+==7323== HEAP SUMMARY:
+==7323==     in use at exit: 0 bytes in 0 blocks
+==7323==   total heap usage: 241 allocs, 241 frees, 82,952 bytes allocated
+==7323== 
+==7323== All heap blocks were freed -- no leaks are possible
+==7323== 
+==7323== For lists of detected and suppressed errors, rerun with: -s
+==7323== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
